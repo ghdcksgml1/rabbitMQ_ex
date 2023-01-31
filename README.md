@@ -25,3 +25,10 @@ Springboot + RabbitMQ를 통한 Producer Consumer 구현
 ## Message
 
 - 메시지는 RabbitMQ를 통해 Producer가 Consumer에게 전달하려는 정보이다.
+
+## Exchange
+
+- Exchange는 Producer와 Consumer 사이에 중개자 역할을 한다.
+- Producer가 queue에 직접 Message를 보내지 않고, Producer는 Exchange에 Message를 보낸다.
+- Exchange는 설정된 규칙에 의해 하나 혹은 다수의 큐에 Message를 전달한다.
+- 따라서, Producer는 이러한 Message들을 받는 큐에 대해 알 필요가 없다.
