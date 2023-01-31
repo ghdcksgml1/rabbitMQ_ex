@@ -32,3 +32,11 @@ Springboot + RabbitMQ를 통한 Producer Consumer 구현
 - Producer가 queue에 직접 Message를 보내지 않고, Producer는 Exchange에 Message를 보낸다.
 - Exchange는 설정된 규칙에 의해 하나 혹은 다수의 큐에 Message를 전달한다.
 - 따라서, Producer는 이러한 Message들을 받는 큐에 대해 알 필요가 없다.
+
+## Routing Key
+
+- Routing Key는 Message를 Queue로 라우팅하는 방법을 결정하기 위해 Exchange가 살펴보는 키입니다.
+
+## Binding
+
+- Binding은 Queue와 Exchange 사이를 이어주는 것이다.
